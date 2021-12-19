@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Property</title>
+    <style>
+      .section-design {
+        /* background-color: cornflowerblue; */
+        padding-bottom: 1000px;
+      }
+      .box-design {
+        background-color: chartreuse;
+        padding: 0px 20px;
+        display: inline;
+        font-weight: bolder;
+        /* position: relative;
+        top: 50px; */
+      }
+      .parent-design {
+        padding-bottom: 200px;
+        background-color: coral;
+      }
+      .sticky-position {
+        position: sticky;
+        top: 50px;
+      }
+      .fixed-position {
+        position: fixed;
+        top: 50px;
+      }
+      .static-position {
+        position: static;
+        top: 50px;
+      }
+      .relative-position {
+        position: relative;
+        top: 50px;
+      }
+      .absolute-position {
+        position: absolute;
+        top: 50px;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgba(0, 179, 255, 0.667)">
+    <!-- <h1 class="heading-design">---------------After</h1> -->
+
+    <!-- <div class="parent-design">
+      <article>
+        <strong style="background-color: gold; padding: 0px 23px"
+          >Siblings</strong
+        >
+      </article>
+    </div> -->
+    <article>
+      <strong style="background-color: gold; padding: 0px 23px"
+        >Ancestor</strong
+      >
+    </article>
+    <article>
+      <strong style="background-color: gold; padding: 0px 23px"
+        >Ancestor</strong
+      >
+    </article>
+    <article>
+      <strong style="background-color: gold; padding: 0px 23px"
+        >Nearest Ancestor</strong
+      >
+    </article>
+    <article class="box-design sticky-position">Sticky</article>
+    <article>
+      <strong style="background-color: gold; padding: 0px 23px"
+        >Nearest Successor</strong
+      >
+    </article>
+    <article>
+      <strong style="background-color: gold; padding: 0px 23px"
+        >Successor
+      </strong>
+    </article>
+    <article>
+      <strong style="background-color: gold; padding: 0px 23px"
+        >Successor</strong
+      >
+    </article>
+    <section class="section-design"></section>
+  </body>
+</html>
